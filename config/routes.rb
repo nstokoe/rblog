@@ -1,6 +1,8 @@
 Rblog::Application.routes.draw do
   get "static_pages/home"
   get "static_pages/help"
+  get "static_pages/about"
+  get "static_pages/contact"
   resources :posts
 
   resources :users
@@ -45,7 +47,7 @@ Rblog::Application.routes.draw do
   #       get 'recent', on: :collection
   #     end
   #   end
-  
+
   # Example resource route with concerns:
   #   concern :toggleable do
   #     post 'toggle'
