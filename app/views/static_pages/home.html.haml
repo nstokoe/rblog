@@ -1,2 +1,7 @@
-%h1 RBlog
-%p This is the home page for rblog
+.text-center.jumbotron
+  %h1= "Welcome to #{Rblog::APP_SHORT_NAME}"
+
+  %h2 Lorem Ipsum Something Something Something
+
+  = link_to 'Sign up now!', signup_path, class: 'btn btn-large btn-primary'
+

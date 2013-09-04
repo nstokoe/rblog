@@ -7,6 +7,9 @@ require 'rails/all'
 Bundler.require(:default, Rails.env)
 
 module Rblog
+
+  APP_SHORT_NAME = "Spec Tester"
+
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -23,5 +26,6 @@ module Rblog
     config.generators do |g|
       g.template_engine :haml
     end
+    config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
   end
 end
