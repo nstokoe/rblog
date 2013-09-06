@@ -1,14 +1,8 @@
-%p#notice
-  = notice
+= provide(:title, @user.name)
 
-%p
-  %strong Name:
-  = @user.name
-
-%p
-  %strong Email:
-  = @user.email
-
-= link_to 'Edit', edit_user_path(@user)
-|
-= link_to 'Back', users_path
+.row
+  %aside.col-md-5
+    %section
+      %h1
+        = gravatar_for @user
+        = @user.name

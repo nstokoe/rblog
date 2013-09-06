@@ -25,7 +25,9 @@ module Rblog
 
     config.generators do |g|
       g.template_engine :haml
+      g.fixture_replacement :factory_girl, dir: 'spec/factories'
     end
     config.assets.precompile += %w(*.png *.jpg *.jpeg *.gif)
+    #config.filter_parameters = [:password, :password_confirmation]
   end
 end
