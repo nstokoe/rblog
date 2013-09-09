@@ -50,6 +50,12 @@ footer {
   @include box_sizing;
 }
 
+/* Flash message styles */
+
 .alert-notice {
   @extend .alert-info;
+}
+
+.alert-error {
+  @extend .alert-danger;
 }
